@@ -2,7 +2,7 @@
  * Created by teigenleonard on 6/28/17.
  */
 class DispenserConstructor {
-    private String characterName; // declared but not initialized
+    final private String characterName; // declared but not initialized
 
     // String.contains();
     // public boolean (String matchingText);
