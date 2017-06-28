@@ -2,13 +2,17 @@
  * Created by teigenleonard on 6/28/17.
  */
 class DispenserConstructor {
-    final private String characterName; // declared but not initialized
-
-    // String.contains();
-    // public boolean (String matchingText);
+    public static final int MAX_PEZ = 12;
+    private String characterName; // declared but not initialized
+    private int pezCount;
 
     public DispenserConstructor(String name) {
         characterName = name;
+        pezCount = 0;
+    }
+
+    public void fill() {
+        pezCount = MAX_PEZ;
     }
 
     public String getCharacterName(){
