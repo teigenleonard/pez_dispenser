@@ -12,8 +12,16 @@ class DispenserConstructor {
     }
 
     public void fill() {
-        pezCount = MAX_PEZ;
+        fill(MAX_PEZ);
     }
+
+    public boolean fill(int pezAmount) {
+        boolean wasFilled = false;
+        if(isEmpty()) {
+            pezCount += pezAmount;
+            wasFilled = true;
+        }
+        return wasFilled;    }
 
     public boolean isEmpty() {
         return  pezCount == 0;

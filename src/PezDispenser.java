@@ -32,6 +32,15 @@ public class PezDispenser {
         if (dispenser.isEmpty()) {
             System.out.println("Doh! No more PEZ");
         }
+        dispenser.fill(4);
+        dispenser.fill(1);
+        while (dispenser.dispense()) {
+            System.out.println("Num Num Num!");
+        }
+        while (dispenser.fill(3)) {
+            System.out.println("Plug plug plug");
+        }
+
     }
 
 }
