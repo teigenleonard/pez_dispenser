@@ -37,8 +37,11 @@ public class PezDispenser {
         while (dispenser.dispense()) {
             System.out.println("Num Num Num!");
         }
-        while (dispenser.fill(3)) {
-            System.out.println("Plug plug plug");
+        try {
+            dispenser.fill(400);
+            System.out.println("Will this print?");
+        } catch (IllegalAccessException iae) {
+            System.out.printf("The error was %s", iae.getMessage());
         }
 
     }

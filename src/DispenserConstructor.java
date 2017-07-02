@@ -12,16 +12,17 @@ class DispenserConstructor {
     }
 
     public void fill() {
-        fill(MAX_PEZ);
+       fill (MAX_PEZ);
     }
 
-    public boolean fill(int pezAmount) {
-        boolean wasFilled = false;
-        if(isEmpty()) {
-            pezCount += pezAmount;
-            wasFilled = true;
+    public void fill(int pezAmount) {
+        int newAmount = pezCount + pezAmount;
+        if (newAmount > MAX_PEZ) {
+            throw new IllegalArgumentException("PEZ overload!!!");
         }
-        return wasFilled;    }
+        pezCount = newAmount;
+    }
+
 
     public boolean isEmpty() {
         return  pezCount == 0;
