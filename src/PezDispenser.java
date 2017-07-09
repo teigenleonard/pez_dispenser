@@ -37,12 +37,12 @@ public class PezDispenser {
         while (dispenser.dispense()) {
             System.out.println("Num Num Num!");
         }
-        try {
+//        try {
             dispenser.fill(400);
-            System.out.println("Will this print?");
-        } catch (IllegalAccessException iae) {
-            System.out.printf("The error was %s", iae.getMessage());
-        }
+            System.out.println("This will not print.");
+//        } catch (IllegalAccessException iae) {
+//            System.out.printf("The error was %s", iae.getMessage());
+//        }
 
     }
 
