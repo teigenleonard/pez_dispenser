@@ -12,7 +12,7 @@ class DispenserConstructor {
     }
 
     public void fill() {
-       fill (MAX_PEZ);
+        fill (MAX_PEZ);
     }
 
     public void fill(int pezAmount) {
